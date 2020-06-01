@@ -1,0 +1,14 @@
+%
+%  Example init.ps for gs_worker
+%
+%  This file is executed once when the GhostScript interpreter starts.
+%  Use it to configure the global context, load resources, and define
+%  the state reset procedure called between requests.
+%
+
+%
+%  Define the state reset procedure called between requests
+%
+currentglobal true setglobal
+/GS_WORKER_RESET { clear cleardictstack initgraphics erasepage } bind def
+setglobal
