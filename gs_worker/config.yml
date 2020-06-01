@@ -1,0 +1,4 @@
+appname: "gs_worker"
+charset: "UTF-8"
+template: "simple"
+static_handler: 0
